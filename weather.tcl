@@ -5,7 +5,8 @@
 
 # You must ".chanset #channel +weather" for each chan you wish to use this in 
 # Usage: !w <input> 
-# Input can be <zip> <post code> <city, st> <city, country> <airport code>
+# Input can be <zip> <city, st> <city, country> <airport code> <pws> 
+# To use PWS: !w pws:yourwundergroundpws
 
 # VERSION 4.0 - output string rewrite 
 # VERSION 4.2 - http::cleanup, agent string update
@@ -13,13 +14,13 @@
 # VERSION 4.4 - fixed no windm var bug. 
 # VERSION 4.5 - Single tag change in mobile.wunderground source for forecast. 
 # VERSION 4.6 - Made default scale configurable
-# Edited Feb 01, 2014 - Kiely Cai- Removed Forecast (may tidy up output later and add it again), Added Barometer/Pressure (Rising & Falling), Added Windchill, Fixed Output Tidyness
+# Edited Feb 01, 2014 - Kiely Allen- Removed Forecast (may tidy up output later and add it again), Added Barometer/Pressure (Rising & Falling), Added Windchill, Fixed Output Tidyness
 # Edited Feb 04, 2014 - David Moore - Color Changing Temperature, Aliases, Don't Show Windchill If There Is None
-# Edited Feb 09, 2014 - Kiely Cai/David Moore - Added Wind Gust, Cleaned Up Code, Fixed Multiple Choices Bug
+# Edited Feb 09, 2014 - Kiely Allen/David Moore - Added Wind Gust, Cleaned Up Code, Fixed Multiple Choices Bug
 # Edited Feb 10, 2014 - David Moore - Don't show windchill if $windcf/$windcc is <0.5F than $tempf/$tempc. Wind would often be 'calm' and windchill would show 0.1-0.5F±
-# Edited Feb 13, 2014 - Kiely Cai/David Moore - Remove metric related config checks, all output includes both imperial and metric. Don't show windchill if windchill is higher than $tempf, windchills under 1F of $tempf are insignificant
-# Edited Feb 14, 2014 - Kiely Cai - Removed custom !ws as it didn't work as exoected, (need to fix missing $windgm error)
-# Edited Jun 12, 2014 - Kiely Cai - Fixed $color extending to all text after $tempf with \003 (no-color)
+# Edited Feb 13, 2014 - Kiely Allen/David Moore - Remove metric related config checks, all output includes both imperial and metric. Don't show windchill if windchill is higher than $tempf, windchills under 1F of $tempf are insignificant
+# Edited Feb 14, 2014 - Kiely Allen - Removed custom !ws as it didn't work as exoected, (need to fix missing $windgm error)
+# Edited Jun 12, 2014 - Kiely Allen - Fixed $color extending to all text after $tempf with \003 (no-color)
 
 ####################################################################
 
